@@ -381,12 +381,13 @@ cydog banner css
     justify-content: center;
 }
 #cydog_banner_area .buttons-container .banner_btn_download{
-    width: 46rem;
-    height: 7rem;
-    margin-top: 3rem;
+    width: 35rem;
+    height: 6rem;
+    /* margin-top: 3rem; */
     position: relative;
     border: none;
     outline: none;
+    margin: 3rem 3rem 0 0;
 }
 #cydog_banner_area .buttons-container .banner_btn_download:hover{
     background-color: transparent !important;
@@ -394,12 +395,12 @@ cydog banner css
 }
 #cydog_banner_area .buttons-container .banner_btn_download a{
     text-decoration: none;
-    font-size: 3.2rem;
+    font-size: 1.6rem;
     color: #fff;
 }
 #cydog_banner_area .buttons-container .banner_btn_download .fa-download{
     position: absolute;
-    right: 5rem;
+    right: 2rem;
     font-size: 2rem;
 }
 #cydog_banner_area .cydog_dhasboard,
@@ -414,6 +415,13 @@ cydog banner css
     bottom: -18rem;
 }
 /* responsive css */
+@media screen and (max-width:992px){
+    #cydog_banner_area .buttons-container .banner_btn_download a {
+      font-size: 1.4rem;
+}
+#cydog_banner_area .buttons-container .banner_btn_download .fa-download {
+     font-size: 1.2rem;
+}
 @media screen and (max-width: 768px){
     #cydog_banner_area{
         padding-top: 16rem;
@@ -422,13 +430,14 @@ cydog banner css
         font-size: 4rem;
     }
     #cydog_banner_area .buttons-container .banner_btn_download{
-        width: 40rem;
+        width: 30rem;
+        margin-right: 0;
     }
     #cydog_banner_area .buttons-container .banner_btn_download .fa-download{
         right: 4rem;
     }
     #cydog_banner_area .buttons-container .banner_btn_download a{
-        font-size: 2.6rem;
+       
     }
     #cydog_banner_area .cydog_dhasboard,
     #cydog_banner_area .cydog_search_bar{
