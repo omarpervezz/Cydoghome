@@ -27,3 +27,42 @@ $(window).scroll(function () {
 	  $("nav").removeClass("nav_bg_adder");
 	}
   });
+
+  //why cydog slider 
+$(document).ready(function () {
+
+	$('.items').slick({
+		dots: true,
+		infinite: true,
+		speed: 3000,
+		autoplay: false,
+		autoplaySpeed: 2000,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		responsive: [{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 550,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+
+		]
+	});
+});
