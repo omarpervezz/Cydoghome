@@ -34,9 +34,9 @@ $(document).ready(function () {
 	$('.items').slick({
 		dots: true,
 		infinite: true,
-		speed: 3000,
+		speed: 2000,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 3000,
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		responsive: [{
