@@ -35,7 +35,7 @@ $(document).ready(function () {
 		dots: true,
 		infinite: true,
 		speed: 3000,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 2000,
 		slidesToShow: 3,
 		slidesToScroll: 3,
