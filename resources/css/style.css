@@ -751,6 +751,7 @@ minimalist browsing css
 #cydog_browsing_info .left_app_info{
     width: 25rem;
 }
+/* responsive css */
 @media screen and (max-width:768px) {
     #cydog_browsing_info .cydog_minimalast_info{
         padding-top: 3rem;
@@ -759,6 +760,14 @@ minimalist browsing css
    #cydog_browsing_info .left_app_info{
     width: 20rem;
 }
+}
+@media screen and (max-width:576px) {
+    #cydog_browsing_info h3{
+        font-size: 2.5rem;
+    }
+    #cydog_browsing_info .minimalast_short_info{
+        font-size: 1.4rem;
+    }
 }
 /* 
 ---------------------------------------------
