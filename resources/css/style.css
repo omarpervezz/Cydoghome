@@ -529,10 +529,9 @@ why cydog browser css
 
 .slick-next {
 	right: -1rem;
+	display: none !important;
 }
-.slick-prev{
-left: -2rem;
-}
+.slick-prev{left: -2rem;display: none !important;}
 .slick-prev:before,
 .slick-next:before {
 	font-size: 3.2rem !important;
@@ -719,85 +718,24 @@ cydog browser presentation
 --------------------------------------------- 
 */
 
+/* 
+---------------------------------------------
+cydog browser security
+--------------------------------------------- 
+*/
+#cydog_security{
+    background-color: #2663D1;
+}
+#cydog_security .cydog_browser_big_img .head_cydog_img{
+    margin-bottom: 3rem;
+}
+ 
 
 /* 
 ---------------------------------------------
-minimalist browsing css
+cydog browser security
 --------------------------------------------- 
 */
-
-
-#cydog_browsing_info{
-    text-align: center;
-}
-#cydog_browsing_info .cydog_browser_big_img .head_cydog_img{
-    background-color: rgb(243 243 243);
-    border-radius:1rem;
-}
-#cydog_browsing_info .first_info img{
-    margin-top: 8rem !important;
-}
-#cydog_browsing_info .second_info img{
-    width: 20rem;
-    margin-top: 7rem;
-}
-
-#cydog_browsing_info .third_info img{
-    margin-top: 9rem;
-    width: 22rem !important;
-}
-#cydog_browsing_info .fourth_info{
-}
-#cydog_browsing_info .fourth_info img{
-    width: 20rem !important;
-    margin-top: 5rem;
-}
-#cydog_browsing_info .cydog_minimalast_info{
-    padding-top: 12rem;
-}
-#cydog_browsing_info h3{
-    font-size: 3.3rem;
-    margin-bottom: 1rem;
-    text-align: left;
-}
-#cydog_browsing_info .minimalast_short_info{
-    font-size: 2rem;
-    text-align: left;
-}
-#cydog_browsing_info .minimalist_info_img img{
-    width: 26rem;
-    max-width: 100%;
-}
-
-/* responsive css */
-@media screen and (max-width:768px) {
-    #cydog_browsing_info .cydog_minimalast_info{
-        padding-top: 3rem;
-    }
-    #cydog_browsing_info .right_app_info,
-   #cydog_browsing_info .left_app_info{
-    width: 20rem;
-}
-}
-@media screen and (max-width:576px) {
-    #cydog_browsing_info h3{
-        font-size: 2.5rem;
-    }
-    #cydog_browsing_info .minimalast_short_info{
-        font-size: 1.4rem;
-    }
-}
-/* 
----------------------------------------------
-minimalist browsing css
---------------------------------------------- 
-*/
-
-
-
-
-
-
 
 
 
