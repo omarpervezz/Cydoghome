@@ -738,11 +738,19 @@ minimalist browsing css
     margin-top: 8rem !important;
 }
 #cydog_browsing_info .second_info img{
+    width: 20rem;
     margin-top: 7rem;
 }
+
 #cydog_browsing_info .third_info img{
     margin-top: 9rem;
-    width: 23rem !important;
+    width: 22rem !important;
+}
+#cydog_browsing_info .fourth_info{
+}
+#cydog_browsing_info .fourth_info img{
+    width: 20rem !important;
+    margin-top: 5rem;
 }
 #cydog_browsing_info .cydog_minimalast_info{
     padding-top: 12rem;
@@ -757,7 +765,7 @@ minimalist browsing css
     text-align: left;
 }
 #cydog_browsing_info .minimalist_info_img img{
-    width: 28rem;
+    width: 26rem;
     max-width: 100%;
 }
 
