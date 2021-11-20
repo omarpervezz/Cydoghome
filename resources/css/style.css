@@ -962,8 +962,12 @@ cydog banner css
 */
 
 #cydog_exploration_banner{
-    padding: 8rem 0 5rem;
+    padding: 8rem 0 11rem;
     background: #2663D1;
+}
+#cydog_exploration_banner img{
+    width: 65rem;
+    max-width: 100%;
 }
 
 /* 
@@ -978,8 +982,9 @@ cydog about us css
 --------------------------------------------- 
 */
 #about_cydog{
-    padding: 4rem 8rem;
+    padding: 7rem 0 3rem 0;
     font-family: 'Poppins', sans-serif;
+    background: #020202;
 }
 #about_cydog .left_cydog{
     padding-top: 6rem;
@@ -1035,10 +1040,243 @@ cydog about us css
 --------------------------------------------- 
 */
 
+/* 
+---------------------------------------------
+cydog popup us css
+--------------------------------------------- 
+*/
+
+.about_us {
+	background: #2663D1;
+	width: 100%;
+	padding-bottom: 40px;
+    padding-top: 6rem;
+}
+
+.about_us .graphics {
+	width: 15%;
+	text-align: center;
+	margin-left: 42.5%;
+	margin-right: 42.5%;
+}
+
+.about_us .modal_of {
+	margin-top: 40px;
+	padding-top: 40px;
+	padding-left: 13%;
+	background: #000;
+	box-shadow: -1px 26px 19px -2px rgba(0,0,0,0.91);
+	-webkit-box-shadow: -1px 13px 19px -2px rgb(9 12 18 / 91%);
+	-moz-box-shadow: -1px 26px 19px -2px rgba(0,0,0,0.91);
+	border-radius: 2rem;
+}
+
+.about_us .modal_img {
+	width: 37px;
+	height: 43px;
+	cursor: pointer;
+}
+
+.about_us .modal_of .learn-more {
+	font-size: 21px;
+	line-height: 14px;
+	color: #fff !important;
+}
+
+.about_us .marqueee marquee {
+	font-size: 23px;
+	color: #f5f5f5 !important;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 20px 0;
+	line-height: 0;
+}
+
+.title h3 {
+	font-weight: 300;
+	font-size: 25px;
+	margin-top: 25px;
+	color: #3C4858;
+}
+.modal p{
+    color: #fff !important;
+}
+.modal-dialog .modal-content {
+	-webkit-box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+	box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+	border-radius: 6px;
+	border: none;
+	background: #2663D1 !important;
+}
+
+.modal-dialog .modal-content p {
+	color: #f1e9e9 !important;
+	font-weight: 300;
+	font-size: 1.2rem;
+	font-family: 'Poppins';
+}
+
+.modal-dialog .modal-header {
+	border-bottom: none;
+	padding-top: 23px;
+	padding-right: 24px;
+	padding-bottom: 0;
+	padding-left: 24px;
+}
+
+.modal-dialog .modal-header .modal-title {
+	font-size: 17px;
+	font-weight: 300;
+	color: #3C4858;
+	margin-bottom: 0;
+	margin-top: 10px;
+	line-height: 1.5;
+}
+
+.modal-dialog .modal-body {
+	padding-top: 24px;
+	padding-right: 24px;
+	padding-bottom: 16px;
+	padding-left: 24px;
+	color: #3C4858;
+}
+
+.modal .modal-header .close i {
+	font-size: 16px;
+	color: #999;
+}
+
+.modal-dialog .modal-footer {
+	border-top: none;
+	padding: 24px !important;
+}
+
+.modal-dialog .modal-body+.modal-footer {
+	padding-top: 0 !important;
+}
+
+.modal-dialog .modal-footer button {
+	margin: 0 !important;
+	padding-left: 16px !important;
+	padding-right: 16px !important;
+	width: auto;
+}
+
+.modal-dialog .modal-content .card-signup .modal-header {
+	padding-top: 0;
+}
+
+.card .card-title {
+	color: #fff;
+	font-size: 18px !important;
+	font-weight: 700 !important;
+	font-family: Roboto Slab, Times New Roman, serif;
+	margin-top: 10px;
+}
+
+.card .card-header {
+	border-radius: 3px !important;
+	padding: 1rem 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: -30px;
+	border: 0;
+	-webkit-border-radius: 3px !important;
+	-moz-border-radius: 3px !important;
+	-ms-border-radius: 3px !important;
+	-o-border-radius: 3px !important;
+}
+
+.card .card-header-primary {
+	-webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(156, 39, 176, .6);
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px rgba(156, 39, 176, .6);
+	background: -o-linear-gradient(30deg, #ab47bc, #7b1fa2);
+	background: linear-gradient(60deg, #ab47bc, #7b1fa2)
+}
+
+.card-plain .card-body {
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+
+.card .card-body {
+	padding: 15px;
+}
+
+.card form {
+	margin: 0;
+}
+
+.modal-dialog .modal-body {
+	padding: 13px 24px 16px;
+}
+
+.modal-dialog .modal-footer button {
+	color: #fff;
+	margin: 0;
+	padding-left: 16px;
+	padding-right: 16px;
+	width: auto;
+	border: none;
+	text-decoration: none;
+}
+
+.modal-dialog .modal-footer button a {
+	text-decoration: none;
+	color: #fff !important;
+}
+
+@media screen and (max-width:768px) {
+    .about_us .modal_of .flex-row {
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
+		-ms-flex-direction: column !important;
+		flex-direction: column !important;
+		text-align: center !important;
+	}
+	.about_us p {
+		text-align: center !important;
+	}
+	.about_us .modal_of {
+		padding-left: 0 !important;
+	}
+}
+/* 
+---------------------------------------------
+cydog press download us css
+--------------------------------------------- 
+*/
+#downLoad_press{
+    padding: 4rem 4rem;
+    font-family: 'Poppins', sans-serif;
+    background: #2663d1;
+}
+#downLoad_press h3{
+    font-size: 2.6rem;
+}
+#downLoad_press p{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+#downLoad_press .text-black{
+    color: #000 !important;
+    text-decoration: underline;
+}
+#downLoad_press .buttons-container .banner_btn_download .fa-download{
+    right: 6rem;
+}
+/* 
+---------------------------------------------
+cydog press download us css
+--------------------------------------------- 
+*/
 
 
-
-
+/* 
+---------------------------------------------
+cydog popup us css
+--------------------------------------------- 
+*/
 
 /* 
 ---------------------------------------------
