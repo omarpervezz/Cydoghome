@@ -24,13 +24,32 @@ body {
     font-family: changa;
     background: rgb(10, 9, 9);
 }
+body::-webkit-scrollbar {
+	width: 14px;
+	height: 40px;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #0c0d0e;
+	background-image: linear-gradient( #2663D1);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #2663D1;
+	border-radius: 10px;
+	border: 3px solid #1b2137;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
 /* 
 ---------------------------------------------
 global styles
 --------------------------------------------- 
 */
 section{
-    padding: 8rem 0;
+    padding: 3rem 0;
 }
 h2{
     color: #fff;
@@ -96,6 +115,11 @@ h3{
 
 .cydog_apps_img{
     width: 40rem;
+}
+.waves{
+    position: absolute;
+    width: 100%;
+    height: 12rem;
 }
 
 
@@ -361,7 +385,15 @@ nav .logo_link {
 }
 
 
-
+@media screen and (max-width:300px){
+.logo .logo_text {
+    font-size: 1.2rem;
+}
+.hamburger div {
+    width: 2rem;
+    height: 0.1rem;
+}
+}
 
 
 
@@ -500,6 +532,13 @@ cydog banner css
         position: static;
     }
 }
+@media screen and (max-width:300px){
+    #cydog_banner_area .cydog_dhasboard, #cydog_banner_area .cydog_search_bar{
+        width: 10rem;
+    }
+}
+
+
 /* 
 ---------------------------------------------
 cydog banner css
@@ -520,9 +559,13 @@ why cydog browser css
 
 #why_cydog_browser {
 	padding: 12rem 0 5rem 0;
-	background: rgb(10, 9, 9);
+	background: #000000;
+    position: relative;
+   
 }
-
+#why_cydog_browser .slider_top_waves{
+    top: 0;
+}
 #why_cydog_browser h2 {
 	margin-bottom: 3rem;
 }
@@ -587,7 +630,9 @@ why cydog browser css
 	font-weight: 200;
 	line-height: 1.5;
 }
-
+#why_cydog_browser .slider_waves{
+    position: absolute;
+}
 /* responsive css */
 @media screen and (max-width: 576px){
     #why_cydog_browser{
@@ -622,33 +667,6 @@ why cydog browser css
 --------------------------------------------- 
 */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
 ---------------------------------------------
 cydog browser presentation
@@ -656,23 +674,28 @@ cydog browser presentation
 */
 
 #cydog_presentation{
-    padding: 4rem 0 4rem 0;
-    background: rgb(10 9 9);
+    padding: 8rem 0 4rem 0;
+    background: #2663D1;
+    position: relative;
+}
+#cydog_presentation .presentation_top_waves{
+    top: 0;
 }
 #cydog_presentation h2{
-    color: #fff;
+    color: rgb(241 236 236);
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
     margin-top: 0rem;
     font-size: 3.6rem;
+    padding-top: 2rem;
 }
 #cydog_presentation h2::after {
     content: "";
     display: block;
     width: 20rem;
     height: .2rem;
-    background: #2663D1;
+    background: #080808;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
@@ -725,11 +748,15 @@ cydog browser security
 */
 #cydog_security{
     background-color: #2663D1;
+    text-align: center;
 }
 #cydog_security .cydog_browser_big_img .head_cydog_img{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
- 
+#cydog_security .security_small_info img{
+    width: 80rem;
+    max-width: 100%;
+}
 
 /* 
 ---------------------------------------------
@@ -737,10 +764,166 @@ cydog browser security
 --------------------------------------------- 
 */
 
+/* 
+---------------------------------------------
+cydog browser comparison
+--------------------------------------------- 
+*/
+
+#cydog_comparison_chart{
+    padding: 12rem 0 6rem 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+#cydog_comparison_chart .waves{
+    top:0;
+}
+#cydog_comparison_chart h3{
+    font-size: 3.5rem;
+    text-align: center;
+}
+#cydog_comparison_chart .cydog_proection_info ul{
+    margin-top: 3rem;
+}
+#cydog_comparison_chart .cydog_proection_info ul li{
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+}
+#cydog_comparison_chart .cydog_proection_info ul li img{
+    background-color: #2663d1;
+    border-radius: 5rem;
+    width: 2.3rem;
+}
+#cydog_comparison_chart .comparison_chart{
+    margin-top: 4rem;
+    padding: 5rem;
+    background: rgb(10 22 42);
+    border-radius: 2rem;
+  
+}
+#cydog_comparison_chart .comparison_chart .shadow{
+    background: #000;
+    border-radius: 1rem;
+}
+#cydog_comparison_chart .comparison_chart h4{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+#cydog_comparison_chart .comparison_chart img{
+    width: 5.4rem;
+    height: 5rem;
+}
+#cydog_comparison_chart .comparison_chart .built_feature{
+    font-size: 1.9rem;
+    font-weight: 300;
+    margin-top: 3.3rem;
+}
+#cydog_comparison_chart .comparison_chart .add_blocker{
+    width: 3.5rem;
+}
+@media screen and (max-width:768px) {
+    #cydog_comparison_chart .comparison_chart h4,
+    #cydog_comparison_chart .comparison_chart .built_feature{
+        text-align: center !important;
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width:576px) {
+    #cydog_comparison_chart .comparison_chart{
+        margin-top: 0;
+    }
+    #cydog_comparison_chart .cydog_proection_info{
+        display: flex;
+        justify-content: center;
+    }
+    #cydog_comparison_chart .cydog_proection_info ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #cydog_comparison_chart .cydog_proection_info ul li{
+        display: inherit;
+        margin-bottom: 1.2rem;
+    }
+    #cydog_comparison_chart h3 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:410px){
+    #cydog_comparison_chart .comparison_chart{
+       padding: 1rem;
+    }
+    #cydog_comparison_chart .comparison_chart img{
+        width: 3.4rem;
+        height: 3rem;
+    }
+    #cydog_comparison_chart .comparison_chart h5 {
+        margin-top: .8rem;
+    }
+    #cydog_comparison_chart .comparison_chart h5{
+        font-size: 1rem;
+    }
+
+}
+/* 
+---------------------------------------------
+cydog browser comparison
+--------------------------------------------- 
+*/
 
 
+/* 
+---------------------------------------------
+cydog browser advanced css
+--------------------------------------------- 
+*/
 
+#scydog_advanced_security{
+    padding: 5rem 0 5rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+#scydog_advanced_security p{
+    font-size: 1.6rem;
+    width: 60%;
+    margin: 2rem auto;
+}
+#scydog_advanced_security img{
+    width: 24rem;
+}
+#scydog_advanced_security .advancded_short_info{
+    margin-top: 3.5rem;
+    
+}
+#scydog_advanced_security .advancded_short_info h3{
+    font-size: 1.6rem;
+}
+#scydog_advanced_security .advancded_short_info p{
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: 200;
+}
 
+@media screen and (max-width:576px){
+    #scydog_advanced_security p {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    #scydog_advanced_security img{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:300px){
+    #scydog_advanced_security img{
+        width: 10rem;
+    }
+}
+/* 
+---------------------------------------------
+cydog browser advanced css
+--------------------------------------------- 
+*/
 
 
 /* 
