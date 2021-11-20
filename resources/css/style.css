@@ -957,6 +957,9 @@ cydog browser faq
     background: #2663D1 !important;
     border-radius: .4rem;
 }
+#cydog_faq .accordion .card p{
+    font-size: 1.3rem;
+}
 /* Horizontal line */
 .collapsible-link::before {
   content: '';
