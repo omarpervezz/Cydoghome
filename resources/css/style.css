@@ -933,78 +933,6 @@ cydog browser downloaded people
 --------------------------------------------- 
 */
 
-
-
-
-/* 
----------------------------------------------
-cydog browser faq
---------------------------------------------- 
-*/
-#cydog_faq{
-    padding: 4rem 12rem;
-}
-#cydog_faq .accordion .card{
-    background: #000;
-}
-#cydog_faq .accordion .card a{
-    text-decoration: none;
-    font-size: 1.4rem;
-    color: #e3e0e0 !important;
-    font-weight: 200;
-}
-#cydog_faq .accordion > .card > .card-header{
-    background: #2663D1 !important;
-    border-radius: .4rem;
-}
-#cydog_faq .accordion .card p{
-    font-size: 1.3rem;
-}
-/* Horizontal line */
-.collapsible-link::before {
-  content: '';
-  width: 14px;
-  height: 2px;
-  background: #333;
-  position: absolute;
-  top: calc(50% - 1px);
-  right: 1rem;
-  display: block;
-  transition: all 0.3s;
-}
-
-/* Vertical line */
-.collapsible-link::after {
-  content: '';
-  width: 2px;
-  height: 14px;
-  background: #333;
-  position: absolute;
-  top: calc(50% - 7px);
-  right: calc(1rem + 6px);
-  display: block;
-  transition: all 0.3s;
-}
-
-.collapsible-link[aria-expanded='true']::after {
-  transform: rotate(90deg) translateX(-1px);
-}
-
-.collapsible-link[aria-expanded='true']::before {
-  transform: rotate(180deg);
-}
-
-
-/* 
----------------------------------------------
-cydog browser faq
---------------------------------------------- 
-*/
-
-
-
-
-
 /* 
 ---------------------------------------------
 main css
@@ -1012,6 +940,166 @@ main css
 */
 
 
+
+/* 
+---------------------------------------------
+about us page css
+--------------------------------------------- 
+*/
+
+
+
+/* 
+---------------------------------------------
+
+--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------------
+cydog banner css
+--------------------------------------------- 
+*/
+
+#cydog_exploration_banner{
+    padding: 8rem 0 5rem;
+    background: #2663D1;
+}
+
+/* 
+---------------------------------------------
+cydog banner css
+--------------------------------------------- 
+*/
+
+/* 
+---------------------------------------------
+cydog about us css
+--------------------------------------------- 
+*/
+#about_cydog{
+    padding: 4rem 8rem;
+    font-family: 'Poppins', sans-serif;
+}
+#about_cydog .left_cydog{
+    padding-top: 6rem;
+}
+#about_cydog .left_cydog img{
+    width: 38rem;
+    max-width: 100%;
+}
+#about_cydog .right_cydog{
+    padding-top: 10rem;
+}
+#about_cydog .right_cydog img{
+    width: 34rem;
+    max-width: 100%;
+}
+#about_cydog .about_us_short_info{
+    padding-top: 11rem;
+}
+#about_cydog .about_us_short_info h3{
+    font-size: 2.7rem;
+}
+#about_cydog .about_us_short_info p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+@media screen and (max-width:768px) {
+    #about_cydog .left_cydog{
+        padding-top: 0;
+    }
+    #about_cydog .about_us_short_info{
+        padding-top:0;
+        margin-top: -2rem;
+    }
+    #about_cydog .right_cydog{
+        padding-top: 0;
+    }
+}
+@media screen and (max-width:576px){
+    #about_cydog .about_us_short_info h3 {
+        font-size: 1.6rem;
+    }
+    #about_cydog .about_us_short_info p{
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/* 
+---------------------------------------------
+cydog about us css
+--------------------------------------------- 
+*/
+
+
+
+
+
+
+/* 
+---------------------------------------------
+about us page css
+--------------------------------------------- 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+---------------------------------------------
+footer css
+--------------------------------------------- 
+*/
+footer{
+    padding: 5rem 0 3rem;
+    background: #2663D1;
+}
+footer ul li{
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 2rem;
+}
+footer .social_media ul li a i{
+    font-size: 2rem;
+}
+footer .cydog_repository_info ul img{
+    width: 3rem;
+}
+footer .footer_menu{
+    text-align: center;
+}
+footer .footer_menu ul li a{
+    text-decoration: none;
+   color: #fff;
+   font-size: 1.3rem;
+}
+footer .copyright_text{
+    font-size: 1.3rem;
+}
+/* 
+---------------------------------------------
+footer css
+--------------------------------------------- 
+*/
 
 /* 
 ---------------------------------------------
