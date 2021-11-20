@@ -48,9 +48,6 @@ body::-webkit-scrollbar-thumb {
 global styles
 --------------------------------------------- 
 */
-section{
-    padding: 3rem 0;
-}
 h2{
     color: #fff;
     font-weight: 600;
@@ -121,7 +118,36 @@ h3{
     width: 100%;
     height: 12rem;
 }
+ .buttons-container {
+    display: flex;
+    justify-content: center;
+}
+.buttons-container .banner_btn_download{
+    width: 35rem;
+    height: 6rem;
+    position: relative;
+    border: none;
+    outline: none;
+    margin: 3rem 3rem 0 0;
 
+}
+.buttons-container a{
+    text-decoration: none;
+}
+.buttons-container .banner_btn_download:hover{
+    background-color: transparent !important;
+   
+}
+.buttons-container .banner_btn_download{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.buttons-container .banner_btn_download .fa-download{
+    position: absolute;
+    right: 2rem;
+    font-size: 2rem;
+}
 
 /* 
 ---------------------------------------------
@@ -437,36 +463,6 @@ cydog banner css
     font-weight: 500;
 }
 
-#cydog_banner_area .buttons-container {
-    display: flex;
-    justify-content: center;
-}
-#cydog_banner_area .buttons-container .banner_btn_download{
-    width: 35rem;
-    height: 6rem;
-    position: relative;
-    border: none;
-    outline: none;
-    margin: 3rem 3rem 0 0;
-
-}
-#cydog_banner_area .buttons-container a{
-    text-decoration: none;
-}
-#cydog_banner_area .buttons-container .banner_btn_download:hover{
-    background-color: transparent !important;
-   
-}
-#cydog_banner_area .buttons-container .banner_btn_download{
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: #fff;
-}
-#cydog_banner_area .buttons-container .banner_btn_download .fa-download{
-    position: absolute;
-    right: 2rem;
-    font-size: 2rem;
-}
 #cydog_banner_area .cydog_dhasboard,
 #cydog_banner_area .cydog_search_bar{
     margin-top: 7rem;
@@ -478,27 +474,12 @@ cydog banner css
     bottom: -12rem;
 }
 /* responsive css */
-@media screen and (max-width:992px){
-    #cydog_banner_area .buttons-container .banner_btn_download a {
-      font-size: 1.4rem;
-}
-#cydog_banner_area .buttons-container .banner_btn_download .fa-download {
-     font-size: 1.2rem;
-}
-}
 @media screen and (max-width: 768px){
     #cydog_banner_area{
         padding-top: 16rem;
     }
     #cydog_banner_area h1{
         font-size: 4rem;
-    }
-    #cydog_banner_area .buttons-container .banner_btn_download{
-        width: 30rem;
-        margin-right: 0;
-    }
-    #cydog_banner_area .buttons-container .banner_btn_download .fa-download{
-        right: 4rem;
     }
     #cydog_banner_area .cydog_dhasboard,
     #cydog_banner_area .cydog_search_bar{
@@ -523,15 +504,6 @@ cydog banner css
 }
 }
 
-@media screen and (max-width:320px){
-    #cydog_banner_area .buttons-container .banner_btn_download{
-        font-size: 1.2rem;
-    }
-    #cydog_banner_area .buttons-container .banner_btn_download .fa-download {
-        font-size: .8rem;
-        position: static;
-    }
-}
 @media screen and (max-width:300px){
     #cydog_banner_area .cydog_dhasboard, #cydog_banner_area .cydog_search_bar{
         width: 10rem;
@@ -879,7 +851,7 @@ cydog browser advanced css
 */
 
 #scydog_advanced_security{
-    padding: 5rem 0 5rem;
+    padding: 5rem 0 4rem;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -928,6 +900,110 @@ cydog browser advanced css
 
 /* 
 ---------------------------------------------
+cydog browser downloaded people
+--------------------------------------------- 
+*/
+#cydog_brower_download{
+    padding: 2rem 0 4rem 0;
+}
+#cydog_brower_download h1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 3.6rem;
+}
+   
+#cydog_brower_download .buttons-container .down_btn{
+    background: #0a43ad !important;
+}
+
+#cydog_brower_download .buttons-container .down_btn:hover{
+    background: linear-gradient(to right, cornflowerblue, aqua, deeppink, cornflowerblue) 0% 0% / 600% 600% !important;
+    animation: 20s linear 0s infinite normal none running gradient;
+}
+
+@media screen and (max-width:576px) {
+    #cydog_brower_download h1{
+        font-size: 2rem;
+    }
+    
+}
+/* 
+---------------------------------------------
+cydog browser downloaded people
+--------------------------------------------- 
+*/
+
+
+
+
+/* 
+---------------------------------------------
+cydog browser faq
+--------------------------------------------- 
+*/
+#cydog_faq{
+    padding: 4rem 12rem;
+}
+#cydog_faq .accordion .card{
+    background: #000;
+}
+#cydog_faq .accordion .card a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #e3e0e0 !important;
+    font-weight: 200;
+}
+#cydog_faq .accordion > .card > .card-header{
+    background: #2663D1 !important;
+    border-radius: .4rem;
+}
+/* Horizontal line */
+.collapsible-link::before {
+  content: '';
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link::after {
+  content: '';
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded='true']::after {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded='true']::before {
+  transform: rotate(180deg);
+}
+
+
+/* 
+---------------------------------------------
+cydog browser faq
+--------------------------------------------- 
+*/
+
+
+
+
+
+/* 
+---------------------------------------------
 main css
 --------------------------------------------- 
 */
@@ -939,8 +1015,63 @@ main css
 all section responsive css
 --------------------------------------------- 
 */
-@media screen and (max-width:576px){
+/* responsive css */
+@media screen and (max-width:992px){
+     .buttons-container .banner_btn_download a {
+      font-size: 1.4rem;
+}
+.buttons-container .banner_btn_download .fa-download {
+     font-size: 1.2rem;
+}
+}
+@media screen and (max-width: 768px){
+   .buttons-container .banner_btn_download{
+        width: 30rem;
+        margin-right: 0;
+    }
+    .banner_btn_download .fa-download{
+        right: 4rem;
+    }
+}
+@media screen and (max-width: 576px){
     h2{
         font-size: 2rem !important;
     }
 }
+
+@media screen and (max-width:320px){
+    .buttons-container .banner_btn_download{
+        font-size: 1.2rem;
+    }
+    .buttons-container .banner_btn_download .fa-download {
+        font-size: .8rem;
+        position: static;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
